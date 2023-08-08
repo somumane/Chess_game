@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gameboard{
+    margin-top: 30px;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.square{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.square svg{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    position: relative;
+    z-index: -9;
+}
+path{
+    position: relative;
+    z-index: -10;
+}
+.piece{
+    position: relative;
+    z-index: 9;
+}
+.black{
+    background-color: #54575b;
+}
+.white{
+    background-color: rgb(231, 217, 162);
+}
+.p2{
+    fill:white;
+}
+p{
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    border: 0.5px solid black;
+    border-radius:4px;
+    background-color: #3a3f44;
+color: aliceblue;
+}
+#info-display{
+    margin-left: 15px;
+    font-size: 50px;
+    font-weight: 700;
+    border: 0.5px solid black;
+    border-radius:4px;
+    background-color: #3a3f44;
+    color: red;
+}
